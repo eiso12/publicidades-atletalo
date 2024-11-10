@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Publicidades Atletalo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -23,52 +25,53 @@
         <button onclick="location.href='#servicios'">Descubre nuestros servicios</button>
     </section>
 
-    <section id="inicio">
+    <section id="llamado-accion">
         <img src="banner.png" alt="Banner de Publicidades Atletalo" class="banner">
-        <h2>Potenciamos tu marca con la energía del deporte</h2>
-        <button onclick="location.href='#servicios'">Descubre nuestros servicios</button>
+        <h2>Potencia tu marca con la energía del deporte</h2>
+        <button onclick="location.href='#contacto'">Contáctanos</button>
     </section>
 
     <section id="servicios">
         <h2>Servicios</h2>
         <div class="servicio">
+            <i class="fas fa-bullhorn"></i>
             <h3>Estrategias de Publicidad</h3>
             <p>Desarrollamos estrategias efectivas para posicionar tu marca.</p>
         </div>
         <div class="servicio">
+            <i class="fas fa-paint-brush"></i>
             <h3>Diseño de Campañas</h3>
             <p>Creamos campañas visuales que destacan.</p>
         </div>
         <div class="servicio">
+            <i class="fas fa-users"></i>
             <h3>Manejo de Redes Sociales</h3>
             <p>Gestionamos tus redes para aumentar tu presencia.</p>
         </div>
     </section>
-
 </body>
 </html>
 
 <style>
-    /* Estilos Generales */
+/* Estilos Generales */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 body {
-    background: linear-gradient(to bottom right, #1a237e, #0d47a1);
-    color: #fff;  /* Color del texto para que contraste bien */
-    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #0a1f44, #0d47a1);
+    color: #fff;
     margin: 0;
     padding: 0;
-    height: 100vh;  /* Asegura que el fondo cubra toda la altura de la ventana */
+    height: 100vh;
 }
 
 /* Encabezado */
 header {
-    background: rgba(0, 0, 0, 0.4); /* Fondo oscuro con transparencia */
+    background: rgba(0, 0, 0, 0.4);
     color: #fff;
     padding: 1rem;
     text-align: center;
@@ -78,6 +81,7 @@ header nav a {
     color: #fff;
     margin: 0 15px;
     text-decoration: none;
+    font-size: 1.2rem;
 }
 
 header nav a:hover {
@@ -93,7 +97,7 @@ header nav a:hover {
 }
 
 #inicio h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 20px;
 }
 
@@ -103,11 +107,41 @@ header nav a:hover {
     padding: 10px 20px;
     border: none;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
 }
 
 #inicio button:hover {
+    transform: scale(1.1);
     background-color: #e64a19;
+}
+
+/* Llamado a la acción */
+#llamado-accion {
+    background: linear-gradient(to bottom right, #0d47a1, #1a237e);
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+#llamado-accion h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#llamado-accion button {
+    background-color: #1c6e8c;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+#llamado-accion button:hover {
+    transform: scale(1.1);
+    background-color: #14a1c9;
 }
 
 /* Sección de Servicios */
@@ -117,15 +151,25 @@ header nav a:hover {
 }
 
 #servicios h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 1.5rem;
 }
 
 .servicio {
     margin: 1rem;
     padding: 1rem;
-    background: #fff;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background: #1c6e8c;
+    color: #fff;
+    border: 2px solid #ff5722;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    width: 200px;
+}
+
+.servicio i {
+    font-size: 2rem;
+    color: #ff5722;
+    margin-bottom: 10px;
 }
 
 .servicio h3 {
@@ -135,7 +179,7 @@ header nav a:hover {
 
 .servicio p {
     font-size: 1rem;
-    color: #555;
+    color: #e3f2fd;
 }
 
 .banner {
@@ -145,14 +189,13 @@ header nav a:hover {
 
 /* Diseño responsivo para pantallas pequeñas */
 @media (max-width: 768px) {
-    /* Ajusta el tamaño de los textos y márgenes para pantallas pequeñas */
     h2 {
-        font-size: 1.5em; /* Tamaño de texto más pequeño */
+        font-size: 1.5em;
         padding: 10px;
     }
 
     #inicio a {
-        font-size: 1em; /* Tamaño de enlace más pequeño */
+        font-size: 1em;
         padding: 10px;
         display: inline-block;
     }
