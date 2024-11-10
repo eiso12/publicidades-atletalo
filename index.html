@@ -187,17 +187,22 @@ header nav a:hover {
     height: auto;
 }
 
-/* Diseño responsivo para pantallas pequeñas */
+/* Código CSS general aquí... */
+
+/* Diseño responsivo solo para pantallas pequeñas */
 @media (max-width: 768px) {
-    h2 {
-        font-size: 1.5em;
-        padding: 10px;
+    /* Ajustes específicos para pantallas pequeñas */
+    #inicio h2 {
+        font-size: 1.8rem; /* Ajusta el tamaño de fuente solo en pantallas pequeñas */
+        margin-bottom: 10px;
     }
 
-    #inicio a {
-        font-size: 1em;
-        padding: 10px;
-        display: inline-block;
+    header nav a {
+        font-size: 0.9rem; /* Ajusta el tamaño de enlace solo en pantallas pequeñas */
+    }
+
+    .servicio {
+        max-width: 90%; /* Asegura que el cuadro de servicio se ajuste al ancho de pantalla */
     }
 }
 </style>
