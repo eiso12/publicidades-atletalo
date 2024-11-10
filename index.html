@@ -5,9 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Publicidades Atletalo</title>
     <link rel="stylesheet" href="styles.css">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 </head>
 <body>
     <header>
@@ -18,7 +15,6 @@
             <a href="#portafolio">Portafolio</a>
             <a href="#nosotros">Nosotros</a>
             <a href="#contacto">Contacto</a>
-            
         </nav>
     </header>
 
@@ -28,10 +24,10 @@
     </section>
 
     <section id="inicio">
-    <img src="banner.png" alt="Banner de Publicidades Atletalo" class="banner">
-    <h2>Potenciamos tu marca con la energía del deporte</h2>
-    <button onclick="location.href='#servicios'">Descubre nuestros servicios</button>
-</section>
+        <img src="banner.png" alt="Banner de Publicidades Atletalo" class="banner">
+        <h2>Potenciamos tu marca con la energía del deporte</h2>
+        <button onclick="location.href='#servicios'">Descubre nuestros servicios</button>
+    </section>
 
     <section id="servicios">
         <h2>Servicios</h2>
@@ -62,14 +58,17 @@
 }
 
 body {
-    background-color: #f4f4f9;
-    color: #333;
-    line-height: 1.6;
+    background: linear-gradient(to bottom right, #1a237e, #0d47a1);
+    color: #fff;  /* Color del texto para que contraste bien */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;  /* Asegura que el fondo cubra toda la altura de la ventana */
 }
 
 /* Encabezado */
 header {
-    background-color: #333;
+    background: rgba(0, 0, 0, 0.4); /* Fondo oscuro con transparencia */
     color: #fff;
     padding: 1rem;
     text-align: center;
@@ -139,15 +138,8 @@ header nav a:hover {
     color: #555;
 }
 
-/* Estilos generales */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
 .banner {
-    width: 100%; /* Ajusta la imagen para que ocupe el ancho completo del contenedor */
+    width: 100%;
     height: auto;
 }
 
@@ -164,116 +156,5 @@ body {
         padding: 10px;
         display: inline-block;
     }
-
-<style>
-    /* Estilos Generales */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
 }
-
-body {
-    background-color: #f4f4f9;
-    color: #333;
-    line-height: 1.6;
-}
-
-/* Encabezado */
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
-}
-
-header nav a {
-    color: #fff;
-    margin: 0 15px;
-    text-decoration: none;
-}
-
-header nav a:hover {
-    color: #ff5722;
-}
-
-/* Sección de Inicio */
-#inicio {
-    background: url('deporte.jpg') no-repeat center center/cover;
-    color: #fff;
-    text-align: center;
-    padding: 100px 20px;
-}
-
-#inicio h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-#inicio button {
-    background-color: #ff5722;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    font-size: 1rem;
-}
-
-#inicio button:hover {
-    background-color: #e64a19;
-}
-
-/* Sección de Servicios */
-#servicios {
-    padding: 2rem 0;
-    text-align: center;
-}
-
-#servicios h2 {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-}
-
-.servicio {
-    margin: 1rem;
-    padding: 1rem;
-    background: #fff;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-.servicio h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.servicio p {
-    font-size: 1rem;
-    color: #555;
-}
-
-/* Estilos generales */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-.banner {
-    width: 100%; /* Ajusta la imagen para que ocupe el ancho completo del contenedor */
-    height: auto;
-}
-
-/* Diseño responsivo para pantallas pequeñas */
-@media (max-width: 768px) {
-    /* Ajusta el tamaño de los textos y márgenes para pantallas pequeñas */
-    h2 {
-        font-size: 1.5em; /* Tamaño de texto más pequeño */
-        padding: 10px;
-    }
-
-    #inicio a {
-        font-size: 1em; /* Tamaño de enlace más pequeño */
-        padding: 10px;
-        display: inline-block;
-    }
+</style>
