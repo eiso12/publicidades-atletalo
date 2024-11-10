@@ -18,6 +18,7 @@
             <a href="#nosotros">Nosotros</a>
             <a href="#contacto">Contacto</a>
         </nav>
+        <button onclick="location.href='#contacto'" class="contact-button">¡Contáctanos!</button> <!-- Botón de contacto en el header -->
     </header>
 
     <section id="inicio">
@@ -49,6 +50,30 @@
             <p>Gestionamos tus redes para aumentar tu presencia.</p>
         </div>
     </section>
+
+    <!-- Sección de redes sociales -->
+    <section id="redes-sociales">
+        <h2>Síguenos en nuestras redes sociales</h2>
+        <div class="social-buttons">
+            <a href="https://facebook.com" target="_blank" class="social-button facebook">
+                <i class="fab fa-facebook-f"></i> Facebook
+            </a>
+            <a href="https://instagram.com" target="_blank" class="social-button instagram">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+            <a href="https://tiktok.com" target="_blank" class="social-button tiktok">
+                <i class="fab fa-tiktok"></i> TikTok
+            </a>
+        </div>
+    </section>
+
+    <!-- Reposicionamos la sección de contacto para que esté más accesible -->
+    <footer id="contacto">
+        <h2>Contactanos</h2>
+        <p>Estamos aquí para ayudarte a crecer. ¡Contáctanos hoy!</p>
+        <button onclick="location.href='#inicio'">Volver al inicio</button>
+    </footer>
+
 </body>
 </html>
 
@@ -75,6 +100,7 @@ header {
     color: #fff;
     padding: 1rem;
     text-align: center;
+    position: relative;
 }
 
 header nav a {
@@ -86,6 +112,25 @@ header nav a {
 
 header nav a:hover {
     color: #ff5722;
+}
+
+/* Botón de contacto en el header */
+.contact-button {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    padding: 10px 20px;
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #e64a19;
 }
 
 /* Sección de Inicio */
@@ -187,22 +232,98 @@ header nav a:hover {
     height: auto;
 }
 
+/* Sección de Redes Sociales */
+#redes-sociales {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f4f4f4;
+    margin-top: 2rem;
+}
+
+#redes-sociales h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    text-align: center;
+    min-width: 150px; /* Asegura que los botones tengan un tamaño uniforme */
+}
+
+.social-button i {
+    margin-right: 10px;
+}
+
+.social-button:hover {
+    background-color: #ff5722;
+    transform: scale(1.1);
+}
+
+/* Estilos del footer de contacto */
+footer {
+    background-color: #0a1f44;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+    margin-top: 2rem;
+}
+
+footer h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+footer p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+footer button {
+    background-color: #ff5722;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+footer button:hover {
+    background-color: #e64a19;
+}
+
 /* Código CSS general aquí... */
 
 /* Diseño responsivo solo para pantallas pequeñas */
 @media (max-width: 768px) {
     /* Ajustes específicos para pantallas pequeñas */
     #inicio h2 {
-        font-size: 1.8rem; /* Ajusta el tamaño de fuente solo en pantallas pequeñas */
+        font-size: 1.8rem;
         margin-bottom: 10px;
     }
 
     header nav a {
-        font-size: 0.9rem; /* Ajusta el tamaño de enlace solo en pantallas pequeñas */
+        font-size: 0.9rem;
     }
 
     .servicio {
-        max-width: 90%; /* Asegura que el cuadro de servicio se ajuste al ancho de pantalla */
+        max-width: 90%;
     }
 }
 </style>
